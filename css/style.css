@@ -111,7 +111,6 @@
 }
 
 img.Cover {
-  float: middle;
   margin-top: 140px;
 }
 
@@ -250,8 +249,30 @@ img.Mark {
   float: left;
 }
 
+.prev, .next {
+  color: #ccc;
+  position: absolute;
+  z-index: 2;
+  top: 48%;
+  padding: 3px;
+  opacity: 0.5;
+  transition: all 0.2s;
+}
 
- .Work-page {
+.prev:hover, .next:hover {
+  color: red;
+  opacity: 1;
+}
+
+.prev {
+  left: 2%;
+}
+
+.next {
+  right: 2%;
+}
+
+.Work-page {
   font-family: 'ubuntu', sans-serif;
   font-size: .85em; 
   margin: 20px auto;
@@ -266,5 +287,9 @@ img.Mark {
 
 .work-page p:hover {
   color: black;
+}
+
+.fallback {
+  color: red;
 }
 
